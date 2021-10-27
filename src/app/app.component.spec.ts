@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'cs230Fixed'`, () => {
+  it(`should have as title 'hlav-lab'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('cs230Fixed');
+    expect(app.title).toEqual('hlav-lab');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('cs230Fixed app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('hlav-lab app is running!');
   });
 });
