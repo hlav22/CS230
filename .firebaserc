@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cs230lab-7d52e": {
+      "hosting": {
+        "cs230Fixed": [
+          "cs230lab-7d52e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cs230lab-7d52e"
+  }
+}
