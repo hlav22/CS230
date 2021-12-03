@@ -14,6 +14,8 @@ import { UserInfoComponent } from './Headers/user-info.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AuthComponent } from './auth/auth.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -24,18 +26,21 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
     ContentComponent,
     CoursesComponent,
     SubNavComponent,
+    AuthComponent,
     UserInfoComponent
   ],
   exports: [
     TopBarComponent,
     FooterComponent,
     ContentComponent,
+    UserInfoComponent,
     CoursesComponent,
     SubNavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideDatabase(() => getDatabase())

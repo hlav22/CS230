@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/CS230Lab",
+    "public": "dist\\cs230Fixed",
     "ignore": [
       "firebase.json",
       "**/.*",
